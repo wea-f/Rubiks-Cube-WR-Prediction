@@ -6,7 +6,8 @@
 + Parsing (Examine or break down) cuber's data
 + Using linear regression to visualize the trend
 <br>
-**I will be doing this by finding the most qualified cuber, then visualize their improvement and compare it with the world record trend, and get the intersection between the two trend lines. <br>**
+**I will be doing this by finding the most qualified cuber, then visualize their improvement and compare it with the world record trend, and get the intersection between the two trend lines.**
+   <br>
 
 ## Procedure: <br>
 ### To find the next world record holder:
@@ -34,6 +35,7 @@
 + getCandidateData.py - Gets all of the contenders to the world record, then gets the latest 50 solves for data, and also gets the number of 3x3 world records each contenders has. It outputs the numOfRecords.csv and the contendersRecentSolves.csv <br>
 + parseData.py - Uses data, contendersRecentSolves.csv and numOfRecords.csv and finds the 7 variables for each contender and outputs all of the results into the contendersParsedData.csv <br>
 + finalpredict - First, it calculates the score based on the data from contendersParsedData.csv. It gets the cuber of best score. After that it gets the best cuber's improvement rate and graphs it. It graphs the world record progression too, and finds the intersection of the points. <br>
++ All of the csv files are results of/made from the python files, feel free to look at them to see the data that I used!
 
 ## Final Result (Code last ran on 4/21/24) : Xuanyi Geng will break the world record. A time of -1.27 and on December 1st, 2026. 
 ## HOWEVER, as you can see the predicted time is negative! 
