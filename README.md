@@ -2,7 +2,7 @@
 # Goal: Predict the next rubix cube 3x3 world record - <br> I will be finding the solve time, date, and cuber <br> 
 **I will be doing this by:** <br>
 + By web scraping data from websites
-  > Web scraping: Access a website's source code, then extracting specific data from tables in the website
+  > Web scraping: Access a website's source code, then extracting specific data from tables in the website. I will be used the modules Beautiful Soup and requests to do this
 + Parsing (Examine or break down) cuber's data
 + Using linear regression to visualize the trend
 <br>
@@ -11,24 +11,25 @@
 
 ## Procedure: <br>
 ### To find the next world record holder:
-1. ### Get World record contenders, and their data.
-   > #### Contenders will be from the top 100 3x3 fastest solves from the worldcubeassociation.org website, and I will get the cuber who did those solves.
-2. ### Parse their recent data (last 50 solves)
-  #### The 7 variables to determine world record holder: <br>
-> #### Their trend/improvement (slope) <br>
-> #### Their best/worst  solve <br>
-> #### Consistency (standard deviation) <br>
-> #### Average <br>
-> #### Number of DNF's they had. DNF means "did not finish" <br>
-> #### Number of 3x3 world records that they already have <br>
+1. #### Get World record contenders, and their data.
+   > ##### Contenders will be from the top 100 3x3 fastest solves from the worldcubeassociation.org website, and I will get the cuber who did those solves.
+2. #### Parse their recent data (last 50 solves)
+  ##### The 7 variables to determine world record holder: <br>
+> ##### Their trend/improvement (slope) <br>
+> ##### Their best/worst  solve <br>
+> ##### Consistency (standard deviation) <br>
+> ##### Average <br>
+> ##### Number of DNF's they had. DNF means "did not finish" <br>
+> ##### Number of 3x3 world records that they already have <br>
 
-3. ### Find the most qualified cuber based on those 7 variables. 
+3. #### Find the most qualified cuber based on those 7 variables. 
 > In finalpredict.py, you can find a calculate_score function where you can edit the different weights (multipliers) to these variables that I orginally put for your own prediction!
-4. ### Visualize the most qualified cuber's PR (personal record) improvement with a trend line. <br>
 
-5. ### Compare the trend with the world record trend. To get world record progression, graph the history of 3x3 world records and find line of best fit. <br> 
+4. #### Visualize the most qualified cuber's PR (personal record) improvement with a trend line. <br>
 
-6. ### Lastly, get the intersection of both to find the predicted date and time.
+5. #### Compare the trend with the world record trend. To get world record progression, graph the history of 3x3 world records and find line of best fit. <br> 
+
+6. #### Lastly, get the intersection of both to find the predicted date and time.
 
 ## Code Map:
 + historyofwr.py - Gets the world record history. It outputs the data into wrhistory.csv <br>
