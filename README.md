@@ -43,4 +43,6 @@
 So to get an accurate time, I simply printed the date when Xuanyi Geng will break the current world record solely based on his improvement compared to the current world record (3.13).  <br> It will output when his improvement will pass the world record time.  <br>
 **It outputs that Xuanyi Geng's improvement will "break" the record (<3.13) on November 1st, 2024.**
 
+### There is a [repl](https://replit.com/@weafcodes/Predicting-the-next-Rubiks-cube-world-record) on replit.com for this
+
 
